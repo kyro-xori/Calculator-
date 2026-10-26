@@ -1,10 +1,21 @@
 # Mini Games
 
-A small Python project with command-line and Tkinter game examples.
+A small mini-games project with a Python desktop app and a browser version.
+
+## Play in a web browser
+
+Open `index.html` in a web browser to play the browser version. It is a static
+site and does not need Python, an install, or a server. The web version includes
+Rock Paper Scissors, Hangman, Reaction Time, Tic Tac Toe, Snake, and Pong.
+
+For a shareable online demo, publish the repository with GitHub Pages: open the
+repository's **Settings → Pages**, choose **Deploy from a branch**, select the
+`main` branch and `/ (root)` folder, and save. GitHub will show the published
+URL on that Pages settings screen.
 
 ## Run the game picker
 
-Run the GUI game picker from the project folder:
+Run the Python GUI game picker from the project folder:
 
 ```powershell
 python rock_paper_scissors_gui.py

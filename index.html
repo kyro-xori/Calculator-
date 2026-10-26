@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11121a">
+    <meta
+      name="description"
+      content="Play six free mini-games in your browser: Rock Paper Scissors, Hangman, Reaction Time, Tic Tac Toe, Snake, and Pong."
+    >
+    <title>Mini Games Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" data-home aria-label="Mini Games Arcade home">
+          <span class="brand-icon" aria-hidden="true">✦</span>
+          <span>MINI ARCADE</span>
+        </a>
+        <button class="button button-quiet" id="theme-toggle" type="button">
+          Switch theme
+        </button>
+      </header>
+
+      <section class="screen menu-screen" id="menu-screen">
+        <p class="eyebrow">PICK YOUR NEXT CHALLENGE</p>
+        <h1>Welcome to the<br><span>game room.</span></h1>
+        <p class="intro">Six little games. One browser. Choose your favorite.</p>
+        <div class="game-grid">
+          <button class="game-card card-coral" data-open="rps" type="button">
+            <span class="card-icon" aria-hidden="true">✊</span>
+            <span class="card-name">Rock Paper Scissors</span>
+            <span class="card-hint">First to 5 wins</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="game-card card-yellow" data-open="hangman" type="button">
+            <span class="card-icon" aria-hidden="true">⌁</span>
+            <span class="card-name">Hangman</span>
+            <span class="card-hint">Guess the hidden word</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="game-card card-green" data-open="reaction" type="button">
+            <span class="card-icon" aria-hidden="true">⚡</span>
+            <span class="card-name">Reaction Time</span>
+            <span class="card-hint">How fast are you?</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="game-card card-blue" data-open="tic" type="button">
+            <span class="card-icon" aria-hidden="true">×○</span>
+            <span class="card-name">Tic Tac Toe</span>
+            <span class="card-hint">A two-player classic</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="game-card card-purple" data-open="snake" type="button">
+            <span class="card-icon" aria-hidden="true">▦</span>
+            <span class="card-name">Snake</span>
+            <span class="card-hint">Eat, grow, don't crash</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="game-card card-orange" data-open="pong" type="button">
+            <span class="card-icon" aria-hidden="true">▥</span>
+            <span class="card-name">Pong</span>
+            <span class="card-hint">Two players, one ball</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p class="menu-note">Made for fun. Best enjoyed with a friend.</p>
+      </section>
+
+      <section class="screen game-screen" id="game-screen" hidden>
+        <button class="back-link" id="back-to-menu" type="button">← All games</button>
+        <div class="game-heading">
+          <p class="eyebrow" id="game-eyebrow">MINI ARCADE</p>
+          <h2 id="game-title">Game</h2>
+          <p id="game-subtitle" class="game-subtitle"></p>
+        </div>
+        <div class="game-panel" id="game-panel"></div>
+      </section>
+
+      <footer class="site-footer">
+        <span>MINI ARCADE</span>
+        <span>Pick a game. Take a break. Play again.</span>
+      </footer>
+    </main>
+  </body>
+</html>
