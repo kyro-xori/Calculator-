@@ -4,14 +4,10 @@ A small mini-games project with a Python desktop app and a browser version.
 
 ## Play in a web browser
 
-Open `index.html` in a web browser to play the browser version. It is a static
-site and does not need Python, an install, or a server. The web version includes
-Rock Paper Scissors, Hangman, Reaction Time, Tic Tac Toe, Snake, and Pong.
-
-For a shareable online demo, publish the repository with GitHub Pages: open the
-repository's **Settings → Pages**, choose **Deploy from a branch**, select the
-`main` branch and `/ (root)` folder, and save. GitHub will show the published
-URL on that Pages settings screen.
+Play the [browser version online](https://kyro-xori.github.io/Calculator-/), or
+open `index.html` in a browser. It is a static site and does not need Python, an
+install, or a server. The web version includes Rock Paper Scissors, Hangman,
+Reaction Time, Tic Tac Toe, Snake, and Pong.
 
 ## Run the game picker
 
